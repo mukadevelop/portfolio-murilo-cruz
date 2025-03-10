@@ -27,6 +27,7 @@
     padding: 0;
     text-decoration: none;
     letter-spacing: 0.05em;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +44,7 @@ header a{
     width: 100%;
     height: 70px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.164);
+    position: fixed;
     
     /* border: 1px solid greenyellow; */
 }
@@ -55,6 +57,7 @@ header a{
     justify-content: space-between;
     align-items: center;
     padding-inline: 0.3rem;
+    
 
     /* border: 1px solid yellow; */
 }
@@ -98,7 +101,7 @@ header a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 7rem 1rem;
 
     /* border: 1px solid orangered; */
 }
@@ -172,4 +175,14 @@ header a{
     background-color: inherit;
     color: var(--main-color);
     cursor: pointer;
+}
+/* ==== /button ==== */
+
+/* ==== SECTION-SERVICES ==== */
+.section-services {
+    background-color: #323946;
+    height: 700px;
+    text-align: center;
+    font-size: 1.5rem;
+    /* margin-top: 1rem; */
 }
