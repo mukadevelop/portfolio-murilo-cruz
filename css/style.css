@@ -26,11 +26,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    letter-spacing: 0.05em;
 }
 
 body {
     background-color: var(--bg-color-01);
     font-family: var(--font-Poppins);
+    color: #ffffff;
 }
 
 header a{
@@ -40,8 +42,9 @@ header a{
     background-color: var(--bg-color-02);
     width: 100%;
     height: 70px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.164);
     
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
 }
 
 .header-content {
@@ -53,17 +56,120 @@ header a{
     align-items: center;
     padding-inline: 0.3rem;
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .header-logo {
     display: flex;
     align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
 
-    border: 1px solid turquoise;
+    /* border: 1px solid turquoise; */
+}
+
+.header-logo a {
+    cursor: default;
 }
 
 .header-logo img {
-    height: 50px;
-    padding-right: .5rem;
+    height: 36px;
+    padding-right: 0.3rem;
+}
+
+.header-nav a {
+    font-size: 1em;
+    font-weight: 700;
+    padding-inline: .5rem;
+    transition: 0.4s;
+}
+
+.header-nav a:hover {
+    color: var(--main-color);
+}
+
+/* --- /HEADER --- */
+
+/* ---SECTION-HERO--- */
+
+.section-hero {
+    width:1330px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    /* border: 1px solid orangered; */
+}
+
+.section-hero img {
+    max-width: 500px;
+}
+
+.section-hero p {
+    max-width: 75ch;
+    text-align: justify;
+    padding-top: 2rem;
+}
+
+.section-hero h1, h3 {
+    font-family: var(--font-Raleway);
+}
+
+.section-hero h1 {
+    font-size: 4.7em;
+    font-weight: 300;
+}
+
+.section-hero h3 {
+    font-size: 2.7em;
+    font-weight: 200;
+}
+
+.fonts-bold-blue {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 1.8rem 0.5rem;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color-02);
+    box-shadow: 0 0 0.3rem var(--main-color);
+}
+
+/* ===== button ==== */
+
+.btn {
+    display: inline-block;
+    padding: 0.4rem .8rem;
+    background-color: var(--main-color);
+    border-radius: 1.5rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.5s ease;
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
 }
